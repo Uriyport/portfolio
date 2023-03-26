@@ -1,28 +1,88 @@
 /*РћР±РЅСѓР»РµРЅРёРµ*/
-*{padding: 0;margin: 0;border: 0;}
-*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-nav,footer,header,aside{display: block;}
-html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
-input,button,textarea{font-family:inherit;}
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner{padding:0;border:0;}
-a,a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
 /*--------------------*/
-body{
+body {
 
 }
+
 .text {
     font-size: 20px;
     line-height: 20px;
     padding-bottom: 5px;
 }
+
 .header {
     background-color: Aquamarine;
     height: auto;
@@ -30,55 +90,77 @@ body{
     padding: 30px;
     font-size: 20px;
     line-height: 20px;
+    display: flex; /* задать родителю свойство flex*/
+    flex-direction: row; /* основная ось позиционирования потомков, row - горизонтально, column - вертикально*/
+    border: 1px solid black; /* для удобства обозначаем границы родителя для визуализации*/
+    justify-content: space-between; /* устанавливаем расположение детей по основной оси (привер горизонталь)*/
+    align-items: center;/* устанавливаем расположение детей по второстепенной оси (пример вертикаль)*/
+
 
 }
-
+.links{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid green;
+   /* width: 400px;
+    justify-content: space-between;*/
+   }
+.link{
+    margin-right: 20px;
+}
 .body {
-    background:peachpuff;
+    background: peachpuff;
     padding: 20px;
     font-size: 20px;
     line-height: 20px;
 }
-.skills{
-    background:Orchid;
+
+.skills {
+    background: Orchid;
     padding: 20px;
     font-size: 20px;
     line-height: 20px;
 }
-.skills >div{
-    margin-top:10px;
+
+.skills > div {
+    margin-top: 10px;
 }
-.work{
+
+.work {
     background: LightGreen;
     padding: 20px;
     font-size: 20px;
     line-height: 20px;
 }
-.work > div{
-    margin-top:10px;
+
+.work > div {
+    margin-top: 10px;
 }
-.contacts{
+
+.contacts {
     background: LightSkyBlue;
     padding: 20px;
     font-size: 20px;
-    input-top:10 px;
+    input-top: 10px;
 
 }
 
-.h{
+.h {
     font-size: 25px;
     font-weight: bold;
     padding-bottom: 10px;
 }
-.footer{
-    background:PaleVioletRed;
-}
-.footer > img{
-    height: 35px%;
-    width:35px;
+
+.footer {
+    background: PaleVioletRed;
 }
 
-.button{
+.footer > img {
+    height: 35px%;
+    width: 35px;
+}
+
+.button {
     width: 150px;
     height: 25px;
     background-color: white;
@@ -86,13 +168,14 @@ body{
     font-size: 15px;
     margin: 0px 0px 10px 0;
 }
-.input{
+
+.input {
     width: 250px;
     height: 30px;
     margin: 0px 0px 10px 0;
 }
 
-.area{
+.area {
     width: 650px;
     height: 300px;
     margin: 0px 0px 10px 0;
