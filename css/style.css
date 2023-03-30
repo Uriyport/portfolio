@@ -73,111 +73,183 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-body {
-
-}
-
 .text {
     font-size: 20px;
     line-height: 20px;
     padding-bottom: 5px;
 }
 
-.header {
+.header{
     background-color: Aquamarine;
     height: auto;
     box-shadow: 0px 0px 0px 1px #000;
     padding: 30px;
     font-size: 20px;
     line-height: 20px;
-    display: flex; /* задать родителю свойство flex*/
+    display: flex;
     flex-direction: row; /* основная ось позиционирования потомков, row - горизонтально, column - вертикально*/
     border: 1px solid black; /* для удобства обозначаем границы родителя для визуализации*/
     justify-content: space-between; /* устанавливаем расположение детей по основной оси (привер горизонталь)*/
-    align-items: center;/* устанавливаем расположение детей по второстепенной оси (пример вертикаль)*/
-
-
+    / /* width: 400px;justify-content: space-between;*/
 }
-.links{
+.header__title{
+    font-weight: bold;
+    font-size: 35px;
+}
+.header__links-block{
     display: flex;
     flex-direction: row;
-    border: 1px solid green;
-   /* width: 400px;
-    justify-content: space-between;*/
-   }
-.link{
+    justify-content: space-between;
+    align-items: center;
+}
+.header-link{
     margin-right: 20px;
 }
-.body {
+.body{
+    padding: 30px;
     background: peachpuff;
-    padding: 20px;
     font-size: 20px;
     line-height: 20px;
+
+    }
+.body__title {
+    font-weight: bold;
+    font-size: 35px;
+}
+.body__cotnent-block {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.body-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.body-copy{
+    font-weight: bold;
+
+}
+.body-image {
+
 }
 
-.skills {
+.skills{
     background: Orchid;
     padding: 20px;
     font-size: 20px;
     line-height: 20px;
-}
 
-.skills > div {
-    margin-top: 10px;
+       }
+.skills__title {
+    font-weight: bold;
+    padding-top: 30px;
+    font-size: 35px;
 }
+.skills__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-.work {
+}
+.skills__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+.skills__html{
+    margin-right: 50px;
+}
+.skills-css {
+    margin-right: 50px;
+}
+.skills-js {
+    margin-right: 50px;
+}
+.skills-img {
+
+}
+.skills-text {
+ }
+.work{
     background: LightGreen;
     padding: 20px;
     font-size: 20px;
     line-height: 20px;
+
+}
+.work__titleh {
+    font-weight: bold;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.work-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
 }
 
-.work > div {
-    margin-top: 10px;
+.work-button {
+}
+.work-copy{
+    font-weight: bold;
+}
+.work-text {
+
 }
 
-.contacts {
-    background: LightSkyBlue;
+.contacts{
     padding: 20px;
     font-size: 20px;
-    input-top: 10px;
-
+    line-height: 20px;
+    background: LightSkyBlue;
+    display: flex;
+    flex-direction: column;
+border: 10px solid black;
 }
-
-.h {
-    font-size: 25px;
+.contacts__title{
     font-weight: bold;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
 }
+.contacts__input{
+    border: 18px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    }
+.contacts-name{
+    margin-top: 30px;
+}
+.contacts-tel{
+    margin-top: 30px;
+}
+.contacts-text{
+    margin-top: 30px;
+    height: 300px;
+    width: 600px;
+}
+.contacts__button{
+    margin-top: 30px;
+}
+
 
 .footer {
     background: PaleVioletRed;
 }
 
 .footer > img {
-    height: 35px%;
+    height: 35px;
     width: 35px;
 }
 
-.button {
-    width: 150px;
-    height: 25px;
-    background-color: white;
-    color: black;
-    font-size: 15px;
-    margin: 0px 0px 10px 0;
-}
-
-.input {
-    width: 250px;
-    height: 30px;
-    margin: 0px 0px 10px 0;
-}
-
-.area {
-    width: 650px;
-    height: 300px;
-    margin: 0px 0px 10px 0;
-}
+.
 
