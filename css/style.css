@@ -1,100 +1,284 @@
 /*РћР±РЅСѓР»РµРЅРёРµ*/
-*{padding: 0;margin: 0;border: 0;}
-*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-nav,footer,header,aside{display: block;}
-html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
-input,button,textarea{font-family:inherit;}
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner{padding:0;border:0;}
-a,a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
-/*--------------------*/
-body{
-
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/*--------------------*/
 .text {
     font-size: 20px;
     line-height: 20px;
     padding-bottom: 5px;
 }
-.header {
+
+.header{
     background-color: Aquamarine;
     height: auto;
     box-shadow: 0px 0px 0px 1px #000;
     padding: 30px;
     font-size: 20px;
     line-height: 20px;
-
+    display: flex;
+    flex-direction: row; /* основная ось позиционирования потомков, row - горизонтально, column - вертикально*/
+    border: 1px solid black; /* для удобства обозначаем границы родителя для визуализации*/
+    justify-content: space-between; /* устанавливаем расположение детей по основной оси (привер горизонталь)*/
+    / /* width: 400px;justify-content: space-between;*/
 }
-
-.body {
-    background:peachpuff;
-    padding: 20px;
+.header__title{
+    font-weight: bold;
+    font-size: 35px;
+}
+.header__links-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-link{
+    margin-right: 20px;
+}
+.body{
+    padding: 30px;
+    background: peachpuff;
     font-size: 20px;
     line-height: 20px;
+
+    }
+.body__title {
+    font-weight: bold;
+    font-size: 35px;
 }
+.body__cotnent-block {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.body-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.body-copy{
+    font-weight: bold;
+
+}
+.body-image {
+
+}
+
 .skills{
-    background:Orchid;
+    background: Orchid;
     padding: 20px;
     font-size: 20px;
     line-height: 20px;
+
+       }
+.skills__title {
+    font-weight: bold;
+    padding-top: 30px;
+    font-size: 35px;
 }
-.skills >div{
-    margin-top:10px;
+.skills__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
+.skills__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+.skills__html{
+    margin-right: 50px;
+}
+.skills-css {
+    margin-right: 50px;
+}
+.skills-js {
+    margin-right: 50px;
+}
+.skills-img {
+
+}
+.skills-text {
+ }
 .work{
     background: LightGreen;
     padding: 20px;
     font-size: 20px;
     line-height: 20px;
+
 }
-.work > div{
-    margin-top:10px;
+.work__titleh {
+    font-weight: bold;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
 }
+.work-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+
+.work-button {
+}
+.work-copy{
+    font-weight: bold;
+}
+.work-text {
+
+}
+
 .contacts{
-    background: LightSkyBlue;
     padding: 20px;
     font-size: 20px;
-    input-top:10 px;
+    line-height: 20px;
+    background: LightSkyBlue;
+    height: 350px;
+
+         }
+.contacts__title {
+    font-weight: bold;
+    display: flex;
+    align-items: start;
 
 }
+.coynacts__block {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
 
-.h{
-    font-size: 25px;
-    font-weight: bold;
-    padding-bottom: 10px;
+}
+.contacts-name {
+    width: 300px;
+
+}
+.contacts-tel {
+    width: 300px;
+}
+.contacts-text {
+    height: 100px;
+    width: 300px;
+}
+.coynacts__block2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 270px;
+    width: 350px;
+
+
+}
+.contacts-button {
+    display: flex;
+    justify-content: start;
+    width: 80px;
+
 }
 .footer{
-    background:PaleVioletRed;
-}
-.footer > img{
-    height: 35px%;
-    width:35px;
-}
+    background: PaleVioletRed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 10vh;
+    justify-content: space-between;
+   }
 
-.button{
-    width: 150px;
-    height: 25px;
-    background-color: white;
-    color: black;
-    font-size: 15px;
-    margin: 0px 0px 10px 0;
+.footer__titleh{
+    font-weight: bold;
 }
-.input{
-    width: 250px;
+.footer__block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid black;
+    width: 15vw;
+    justify-content: space-between;
+
+}
+.footet-img{
     height: 30px;
-    margin: 0px 0px 10px 0;
+    width: 30px;
 }
+.footer__info{
 
-.area{
-    width: 650px;
-    height: 300px;
-    margin: 0px 0px 10px 0;
+}
+.footer__text{
+    font-weight: bold;
 }
 
